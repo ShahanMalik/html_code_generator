@@ -1,0 +1,869 @@
+{
+  "intents": [
+    {
+      "tag": "heading",
+      "patterns": [
+        "Create a heading",
+        "Make a title",
+        "I need a heading",
+        "Generate an H1 tag"
+      ],
+      "response": ["<h1>Title of the Page</h1>"]
+    },
+    {
+      "tag": "paragraph",
+      "patterns": [
+        "Create a paragraph",
+        "Generate a paragraph",
+        "Add some text",
+        "Write a paragraph"
+      ],
+      "response": ["<p>This is a paragraph of text.</p>"]
+    },
+    {
+      "tag": "image",
+      "patterns": [
+        "Insert an image",
+        "Add an image",
+        "Place an image",
+        "Generate an image tag"
+      ],
+      "response": ["<img src='image.jpg' alt='description of image'>"]
+    },
+    {
+      "tag": "list",
+      "patterns": [
+        "Create a list",
+        "Generate a bullet list",
+        "Make a list of items"
+      ],
+      "response": [
+        "<ul>\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n</ul>"
+      ]
+    },
+    {
+      "tag": "button",
+      "patterns": [
+        "Create a button",
+        "Generate a clickable button",
+        "Add a button",
+        "Make a submit button"
+      ],
+      "response": ["<button type='button'>Click Me</button>"]
+    },
+    {
+      "tag": "div",
+      "patterns": [
+        "Create a div container",
+        "Generate a div element",
+        "Add a div section"
+      ],
+      "response": [
+        "<div class='container'>\n  <!-- Content goes here -->\n</div>"
+      ]
+    },
+    {
+      "tag": "span",
+      "patterns": [
+        "Create a span",
+        "Add a span element",
+        "Generate an inline span"
+      ],
+      "response": ["<span class='highlight'>Text to be highlighted</span>"]
+    },
+    {
+      "tag": "header",
+      "patterns": [
+        "Create a header",
+        "Generate a header tag",
+        "Add a header section"
+      ],
+      "response": ["<header>\n  <h1>Website Header</h1>\n</header>"]
+    },
+    {
+      "tag": "footer",
+      "patterns": [
+        "Create a footer",
+        "Generate a footer section",
+        "Add a footer to the page"
+      ],
+      "response": ["<footer>\n  <p>© 2025 Your Website</p>\n</footer>"]
+    },
+    {
+      "tag": "nav",
+      "patterns": [
+        "Create a navigation menu",
+        "Generate a navigation bar",
+        "Add a navigation section"
+      ],
+      "response": [
+        "<nav>\n  <ul>\n    <li><a href='#home'>Home</a></li>\n    <li><a href='#about'>About</a></li>\n    <li><a href='#contact'>Contact</a></li>\n  </ul>\n</nav>"
+      ]
+    },
+    {
+      "tag": "form",
+      "patterns": [
+        "Create a contact form",
+        "Generate a login form",
+        "Add a form with input fields"
+      ],
+      "response": [
+        "<form action='/submit' method='post'>\n  <label for='username'>Username:</label>\n  <input type='text' id='username' name='username'><br><br>\n  <label for='password'>Password:</label>\n  <input type='password' id='password' name='password'><br><br>\n  <button type='submit'>Login</button>\n</form>"
+      ]
+    },
+    {
+      "tag": "audio",
+      "patterns": [
+        "Add an audio player",
+        "Generate an audio file tag",
+        "Insert an audio player"
+      ],
+      "response": [
+        "<audio controls>\n  <source src='audio.mp3' type='audio/mp3'>\n  Your browser does not support the audio element.\n</audio>"
+      ]
+    },
+    {
+      "tag": "video",
+      "patterns": [
+        "Add a video player",
+        "Create a video element",
+        "Generate a video tag"
+      ],
+      "response": [
+        "<video width='320' height='240' controls>\n  <source src='movie.mp4' type='video/mp4'>\n  Your browser does not support the video tag.\n</video>"
+      ]
+    },
+    {
+      "tag": "blockquote",
+      "patterns": [
+        "Create a blockquote",
+        "Generate a blockquote section",
+        "Add a quoted text"
+      ],
+      "response": [
+        "<blockquote>\n  <p>This is a blockquote text.</p>\n  <footer>- Author</footer>\n</blockquote>"
+      ]
+    },
+    {
+      "tag": "section",
+      "patterns": [
+        "Create a section",
+        "Generate a section element",
+        "Add a new section to the page"
+      ],
+      "response": [
+        "<section>\n  <h2>Section Title</h2>\n  <p>Content for this section.</p>\n</section>"
+      ]
+    },
+    {
+      "tag": "article",
+      "patterns": [
+        "Create an article",
+        "Generate an article section",
+        "Add an article to the page"
+      ],
+      "response": [
+        "<article>\n  <h2>Article Title</h2>\n  <p>Article content goes here.</p>\n</article>"
+      ]
+    },
+    {
+      "tag": "aside",
+      "patterns": [
+        "Create an aside",
+        "Generate an aside section",
+        "Add an aside content"
+      ],
+      "response": [
+        "<aside>\n  <h3>Sidebar</h3>\n  <p>Some additional content for the sidebar.</p>\n</aside>"
+      ]
+    },
+    {
+      "tag": "mark",
+      "patterns": [
+        "Create a marked text",
+        "Generate highlighted text",
+        "Add a highlight"
+      ],
+      "response": ["<mark>This text is highlighted.</mark>"]
+    },
+    {
+      "tag": "strong",
+      "patterns": ["Make text bold", "Create strong text", "Add bold text"],
+      "response": ["<strong>This is bold text.</strong>"]
+    },
+    {
+      "tag": "em",
+      "patterns": [
+        "Make text italic",
+        "Create emphasized text",
+        "Add italic text"
+      ],
+      "response": ["<em>This is italic text.</em>"]
+    },
+    {
+      "tag": "code",
+      "patterns": [
+        "Create a code block",
+        "Add a code snippet",
+        "Generate a code element"
+      ],
+      "response": ["<code>print('Hello, world!')</code>"]
+    },
+    {
+      "tag": "pre",
+      "patterns": [
+        "Create a preformatted text",
+        "Generate a pre tag",
+        "Add preformatted text"
+      ],
+      "response": ["<pre>function greet() {\n  console.log('Hello!');\n}</pre>"]
+    },
+    {
+      "tag": "table",
+      "patterns": [
+        "Create a table",
+        "Generate a table structure",
+        "Add a table to the page"
+      ],
+      "response": [
+        "<table border='1'>\n  <tr>\n    <th>Header 1</th>\n    <th>Header 2</th>\n  </tr>\n  <tr>\n    <td>Row 1, Cell 1</td>\n    <td>Row 1, Cell 2</td>\n  </tr>\n  <tr>\n    <td>Row 2, Cell 1</td>\n    <td>Row 2, Cell 2</td>\n  </tr>\n</table>"
+      ]
+    },
+    {
+      "tag": "thead",
+      "patterns": [
+        "Create a table header",
+        "Generate a table head",
+        "Add a table head section"
+      ],
+      "response": [
+        "<thead>\n  <tr>\n    <th>Column 1</th>\n    <th>Column 2</th>\n  </tr>\n</thead>"
+      ]
+    },
+    {
+      "tag": "tbody",
+      "patterns": [
+        "Create a table body",
+        "Generate a table body section",
+        "Add rows to the table"
+      ],
+      "response": [
+        "<tbody>\n  <tr>\n    <td>Row 1, Data 1</td>\n    <td>Row 1, Data 2</td>\n  </tr>\n  <tr>\n    <td>Row 2, Data 1</td>\n    <td>Row 2, Data 2</td>\n  </tr>\n</tbody>"
+      ]
+    },
+    {
+      "tag": "tfoot",
+      "patterns": [
+        "Create a table footer",
+        "Generate a table foot section",
+        "Add a footer to the table"
+      ],
+      "response": [
+        "<tfoot>\n  <tr>\n    <td>Total</td>\n    <td>Amount</td>\n  </tr>\n</tfoot>"
+      ]
+    },
+    {
+      "tag": "colgroup",
+      "patterns": [
+        "Create a column group",
+        "Generate a group of columns",
+        "Add a column group"
+      ],
+      "response": [
+        "<colgroup>\n  <col span='1' style='background-color:yellow'>\n  <col span='1' style='background-color:cyan'>\n</colgroup>"
+      ]
+    },
+    {
+      "tag": "col",
+      "patterns": [
+        "Create a table column",
+        "Add a column to the table",
+        "Generate a column element"
+      ],
+      "response": ["<col style='background-color:lightgray'>"]
+    },
+    {
+      "tag": "caption",
+      "patterns": [
+        "Create a table caption",
+        "Generate a caption for the table",
+        "Add a caption to the table"
+      ],
+      "response": ["<caption>Table Caption</caption>"]
+    },
+    {
+      "tag": "dl",
+      "patterns": [
+        "Create a definition list",
+        "Generate a list of terms",
+        "Add a definition list"
+      ],
+      "response": [
+        "<dl>\n  <dt>Term 1</dt>\n  <dd>Definition for term 1</dd>\n  <dt>Term 2</dt>\n  <dd>Definition for term 2</dd>\n</dl>"
+      ]
+    },
+    {
+      "tag": "dt",
+      "patterns": [
+        "Create a definition term",
+        "Generate a term in the definition list",
+        "Add a term to the definition list"
+      ],
+      "response": ["<dt>Term 1</dt>"]
+    },
+    {
+      "tag": "dd",
+      "patterns": [
+        "Create a definition description",
+        "Generate a definition for the term",
+        "Add a description to the term"
+      ],
+      "response": ["<dd>Description for the term</dd>"]
+    },
+    {
+      "tag": "input",
+      "patterns": [
+        "Create an input field",
+        "Generate a text input",
+        "Add an input element"
+      ],
+      "response": [
+        "<input type='text' name='username' placeholder='Enter username'>"
+      ]
+    },
+    {
+      "tag": "textarea",
+      "patterns": [
+        "Create a textarea",
+        "Generate a text area for input",
+        "Add a text box"
+      ],
+      "response": [
+        "<textarea rows='4' cols='50' placeholder='Enter your message'></textarea>"
+      ]
+    },
+    {
+      "tag": "select",
+      "patterns": [
+        "Create a dropdown menu",
+        "Generate a select option",
+        "Add a selection list"
+      ],
+      "response": [
+        "<select name='options'>\n  <option value='option1'>Option 1</option>\n  <option value='option2'>Option 2</option>\n  <option value='option3'>Option 3</option>\n</select>"
+      ]
+    },
+    {
+      "tag": "option",
+      "patterns": [
+        "Create a select option",
+        "Generate an option for the dropdown",
+        "Add an option to the select menu"
+      ],
+      "response": ["<option value='option1'>Option 1</option>"]
+    },
+    {
+      "tag": "label",
+      "patterns": [
+        "Create a label for input",
+        "Generate a label tag",
+        "Add a label to a form field"
+      ],
+      "response": ["<label for='username'>Username:</label>"]
+    },
+    {
+      "tag": "legend",
+      "patterns": [
+        "Create a legend for a fieldset",
+        "Generate a legend tag",
+        "Add a fieldset legend"
+      ],
+      "response": ["<legend>Personal Information</legend>"]
+    },
+    {
+      "tag": "fieldset",
+      "patterns": [
+        "Create a fieldset",
+        "Generate a fieldset to group form elements",
+        "Add a fieldset for the form"
+      ],
+      "response": [
+        "<fieldset>\n  <legend>Personal Information</legend>\n  <input type='text' name='name' placeholder='Name'>\n  <input type='email' name='email' placeholder='Email'>\n</fieldset>"
+      ]
+    },
+    {
+      "tag": "optgroup",
+      "patterns": [
+        "Create an optgroup in a dropdown",
+        "Generate an option group",
+        "Add a grouped set of options"
+      ],
+      "response": [
+        "<optgroup label='Group 1'>\n  <option value='option1'>Option 1</option>\n  <option value='option2'>Option 2</option>\n</optgroup>"
+      ]
+    },
+    {
+      "tag": "img",
+      "patterns": [
+        "Add an image",
+        "Create an image element",
+        "Insert an image on the page"
+      ],
+      "response": [
+        "<img src='image.jpg' alt='Description of image' width='500' height='300'>"
+      ]
+    },
+    {
+      "tag": "a",
+      "patterns": [
+        "Create a link",
+        "Generate an anchor tag",
+        "Add a hyperlink"
+      ],
+      "response": ["<a href='https://www.example.com'>Click here</a>"]
+    },
+    {
+      "tag": "h1",
+      "patterns": [
+        "Create a heading 1",
+        "Generate a main heading",
+        "Add an h1 tag"
+      ],
+      "response": ["<h1>Main Heading</h1>"]
+    },
+    {
+      "tag": "h2",
+      "patterns": [
+        "Create a heading 2",
+        "Generate a secondary heading",
+        "Add an h2 tag"
+      ],
+      "response": ["<h2>Secondary Heading</h2>"]
+    },
+    {
+      "tag": "h3",
+      "patterns": [
+        "Create a heading 3",
+        "Generate a tertiary heading",
+        "Add an h3 tag"
+      ],
+      "response": ["<h3>Tertiary Heading</h3>"]
+    },
+    {
+      "tag": "p",
+      "patterns": [
+        "Create a paragraph",
+        "Generate a paragraph of text",
+        "Add a p tag"
+      ],
+      "response": ["<p>This is a paragraph of text.</p>"]
+    },
+    {
+      "tag": "ul",
+      "patterns": [
+        "Create an unordered list",
+        "Generate a bulleted list",
+        "Add a list with bullets"
+      ],
+      "response": [
+        "<ul>\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n</ul>"
+      ]
+    },
+    {
+      "tag": "ol",
+      "patterns": [
+        "Create an ordered list",
+        "Generate a numbered list",
+        "Add a list with numbers"
+      ],
+      "response": [
+        "<ol>\n  <li>First item</li>\n  <li>Second item</li>\n  <li>Third item</li>\n</ol>"
+      ]
+    },
+    {
+      "tag": "li",
+      "patterns": [
+        "Create a list item",
+        "Generate a list element",
+        "Add an item to the list"
+      ],
+      "response": ["<li>List item content</li>"]
+    },
+    {
+      "tag": "hr",
+      "patterns": [
+        "Add a horizontal rule",
+        "Create a line break",
+        "Generate a horizontal divider"
+      ],
+      "response": ["<hr>"]
+    },
+    {
+      "tag": "html",
+      "patterns": [
+        "Create an HTML document",
+        "Generate a basic HTML structure",
+        "Add an HTML page structure"
+      ],
+      "response": [
+        "<html>\n  <head>\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>Welcome to my website</h1>\n  </body>\n</html>"
+      ]
+    },
+    {
+      "tag": "head",
+      "patterns": [
+        "Create a head section",
+        "Generate a head tag",
+        "Add a head to the page"
+      ],
+      "response": ["<head>\n  <title>Page Title</title>\n</head>"]
+    },
+    {
+      "tag": "body",
+      "patterns": [
+        "Create a body section",
+        "Generate a body tag",
+        "Add content inside the body"
+      ],
+      "response": ["<body>\n  <h1>Welcome to the Body Section</h1>\n</body>"]
+    },
+    {
+      "tag": "meta",
+      "patterns": [
+        "Add a meta tag",
+        "Create a meta description",
+        "Generate a meta tag for charset"
+      ],
+      "response": ["<meta charset='UTF-8'>"]
+    },
+    {
+      "tag": "link",
+      "patterns": [
+        "Create a link tag",
+        "Add a stylesheet link",
+        "Generate a link to an external file"
+      ],
+      "response": ["<link rel='stylesheet' type='text/css' href='styles.css'>"]
+    },
+    {
+      "tag": "script",
+      "patterns": [
+        "Add a script tag",
+        "Create a JavaScript script",
+        "Generate a script for the page"
+      ],
+      "response": ["<script src='script.js'></script>"]
+    },
+    {
+      "tag": "style",
+      "patterns": [
+        "Add a style tag",
+        "Create CSS styles",
+        "Generate inline CSS styles"
+      ],
+      "response": [
+        "<style>\n  body {\n    background-color: lightblue;\n  }\n</style>"
+      ]
+    },
+    {
+      "tag": "title",
+      "patterns": [
+        "Create a title for the page",
+        "Generate a page title",
+        "Add a title tag"
+      ],
+      "response": ["<title>My Website</title>"]
+    },
+    {
+      "tag": "iframe",
+      "patterns": [
+        "Create an embedded iframe",
+        "Generate an iframe element",
+        "Add a frame for external content"
+      ],
+      "response": [
+        "<iframe src='https://www.example.com' width='600' height='400'></iframe>"
+      ]
+    },
+    {
+      "tag": "b",
+      "patterns": [
+        "Create bold text",
+        "Generate a bold tag",
+        "Add bold formatting"
+      ],
+      "response": ["<b>This is bold text</b>"]
+    },
+    {
+      "tag": "canvas",
+      "patterns": [
+        "Create a canvas element",
+        "Generate a canvas for drawing",
+        "Add a drawing area"
+      ],
+      "response": ["<canvas id='myCanvas' width='500' height='500'></canvas>"]
+    },
+    {
+      "tag": "svg",
+      "patterns": [
+        "Create an SVG element",
+        "Generate a scalable vector graphic",
+        "Add a SVG image"
+      ],
+      "response": [
+        "<svg width='100' height='100'>\n  <circle cx='50' cy='50' r='40' stroke='green' stroke-width='4' fill='yellow' />\n</svg>"
+      ]
+    },
+    {
+      "tag": "embed",
+      "patterns": [
+        "Create an embedded object",
+        "Generate an embed element",
+        "Add an embedded resource"
+      ],
+      "response": ["<embed src='file.swf' width='300' height='200'>"]
+    },
+    {
+      "tag": "object",
+      "patterns": [
+        "Create an object element",
+        "Generate an embedded object",
+        "Add an external resource"
+      ],
+      "response": [
+        "<object data='movie.mp4' type='video/mp4' width='500' height='300'></object>"
+      ]
+    },
+    {
+      "tag": "param",
+      "patterns": [
+        "Create a param element",
+        "Generate a parameter for an object",
+        "Add a parameter to an embedded object"
+      ],
+      "response": ["<param name='autoplay' value='true'>"]
+    },
+    {
+      "tag": "source",
+      "patterns": [
+        "Create a source element",
+        "Generate a media source",
+        "Add a source to a video or audio element"
+      ],
+      "response": ["<source src='audio.mp3' type='audio/mpeg'>"]
+    },
+    {
+      "tag": "progress",
+      "patterns": [
+        "Create a progress bar",
+        "Generate a progress element",
+        "Add a progress indicator"
+      ],
+      "response": ["<progress value='70' max='100'>70%</progress>"]
+    },
+    {
+      "tag": "meter",
+      "patterns": [
+        "Create a meter element",
+        "Generate a measurement meter",
+        "Add a meter for input value"
+      ],
+      "response": ["<meter value='0.8' min='0' max='1'>80%</meter>"]
+    },
+    {
+      "tag": "details",
+      "patterns": [
+        "Create a details section",
+        "Generate a collapsible section",
+        "Add a details element"
+      ],
+      "response": [
+        "<details>\n  <summary>More Information</summary>\n  <p>Additional details here.</p>\n</details>"
+      ]
+    },
+    {
+      "tag": "summary",
+      "patterns": [
+        "Create a summary for details",
+        "Generate a summary element",
+        "Add a summary to the details"
+      ],
+      "response": ["<summary>Click to expand</summary>"]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "Create a time element",
+        "Generate a date and time field",
+        "Add a time tag"
+      ],
+      "response": ["<time datetime='2025-01-22'>January 22, 2025</time>"]
+    },
+    {
+      "tag": "wbr",
+      "patterns": [
+        "Create a word break opportunity",
+        "Generate a break point in word",
+        "Add a wbr tag"
+      ],
+      "response": ["<wbr>"]
+    },
+    {
+      "tag": "kbd",
+      "patterns": [
+        "Create keyboard input text",
+        "Generate a kbd element",
+        "Add keyboard input"
+      ],
+      "response": ["<kbd>Ctrl + C</kbd>"]
+    },
+    {
+      "tag": "samp",
+      "patterns": [
+        "Create sample output text",
+        "Generate a sample element",
+        "Add a sample of code output"
+      ],
+      "response": ["<samp>Sample Output</samp>"]
+    },
+    {
+      "tag": "bdi",
+      "patterns": [
+        "Create a bi-directional isolation",
+        "Generate a bdi element",
+        "Add a text with different direction"
+      ],
+      "response": ["<bdi>Text with a different direction</bdi>"]
+    },
+    {
+      "tag": "bdo",
+      "patterns": [
+        "Create a bi-directional override",
+        "Generate a bdo element",
+        "Add a text with overridden direction"
+      ],
+      "response": ["<bdo dir='rtl'>Right-to-left text</bdo>"]
+    },
+    {
+      "tag": "ruby",
+      "patterns": [
+        "Create a ruby annotation",
+        "Generate a ruby element",
+        "Add ruby text for pronunciation"
+      ],
+      "response": ["<ruby>漢 <rt>kan</rt></ruby>"]
+    },
+    {
+      "tag": "rt",
+      "patterns": [
+        "Create a ruby text",
+        "Generate a ruby text annotation",
+        "Add a ruby text"
+      ],
+      "response": ["<rt>kan</rt>"]
+    },
+    {
+      "tag": "rp",
+      "patterns": [
+        "Create a ruby parenthesis",
+        "Generate a ruby parenthesis for text",
+        "Add a parenthesis for ruby annotation"
+      ],
+      "response": ["<rp>(</rp>"]
+    },
+    {
+      "tag": "address",
+      "patterns": [
+        "Create an address section",
+        "Generate a contact address",
+        "Add an address block"
+      ],
+      "response": [
+        "<address>\n  123 Main St,<br>\n  Springfield, IL 62701<br>\n  Email: contact@example.com\n</address>"
+      ]
+    },
+    {
+      "tag": "cite",
+      "patterns": [
+        "Create a citation",
+        "Generate a source reference",
+        "Add a cite tag for a reference"
+      ],
+      "response": ["<cite>The Great Gatsby</cite>"]
+    },
+    {
+      "tag": "dfn",
+      "patterns": [
+        "Create a definition term",
+        "Generate a term being defined",
+        "Add a dfn tag for a definition"
+      ],
+      "response": [
+        "<dfn>HTML</dfn> is the standard markup language for web pages."
+      ]
+    },
+    {
+      "tag": "abbr",
+      "patterns": [
+        "Create an abbreviation",
+        "Generate an acronym tag",
+        "Add an abbr tag for short form"
+      ],
+      "response": ["<abbr title='HyperText Markup Language'>HTML</abbr>"]
+    },
+    {
+      "tag": "q",
+      "patterns": [
+        "Create a quoted text",
+        "Generate an inline quote",
+        "Add a quotation tag"
+      ],
+      "response": ["<q>To be or not to be, that is the question.</q>"]
+    },
+    {
+      "tag": "del",
+      "patterns": [
+        "Create deleted text",
+        "Generate a strikethrough text",
+        "Add deleted content"
+      ],
+      "response": ["<del>This text is deleted.</del>"]
+    },
+    {
+      "tag": "ins",
+      "patterns": [
+        "Create inserted text",
+        "Generate an inserted text block",
+        "Add text that has been inserted"
+      ],
+      "response": ["<ins>This text is inserted.</ins>"]
+    },
+    {
+      "tag": "sub",
+      "patterns": [
+        "Create subscript text",
+        "Generate a subscript element",
+        "Add a subscript for text"
+      ],
+      "response": ["H<sub>2</sub>O"]
+    },
+    {
+      "tag": "sup",
+      "patterns": [
+        "Create superscript text",
+        "Generate a superscript element",
+        "Add superscript formatting"
+      ],
+      "response": ["x<sup>2</sup>"]
+    },
+    {
+      "tag": "small",
+      "patterns": [
+        "Create small text",
+        "Generate a smaller text",
+        "Add a small font text"
+      ],
+      "response": ["<small>This is smaller text.</small>"]
+    }
+  ]
+}
